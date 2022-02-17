@@ -42,7 +42,7 @@ Açık kaynak topluluğunun web bölümündeki başlangıç seviyesinde olan ark
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="./jquery.js" type="text/javascript"></script>
+    <script src="jquery.js" type="text/javascript"></script>
   </head>
 ```
 ---
