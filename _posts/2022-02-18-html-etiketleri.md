@@ -2,7 +2,7 @@
 layout: post
 title:  "Html Etiketleri"
 author: talhaaksoy
-categories: Html
+category: Html
 tag: Html
 ---
 
