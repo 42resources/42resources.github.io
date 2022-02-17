@@ -8,7 +8,7 @@ tag: [örnek taslağı]
 
 # Yeni post oluşturma
 
-Yeni post oluşturmak için **[\_posts](/_posts/)** klasörün içine **YIL-AY-GÜN-başlık.md** şeklinde dosya oluşturmanız gerekiyor.
+Yeni post oluşturmak için **[\_posts](https://github.com/42resources/42resources.github.io/tree/master/_posts)** klasörün içine **YIL-AY-GÜN-başlık.md** şeklinde dosya oluşturmanız gerekiyor.
 
 ## Örneğin
 
@@ -43,7 +43,7 @@ Umarım beğenirsiniz!
 
 # Yazar olarak kendini ekleme
 
-Kendini yazar olarak eklemeniz için ilk önce **[şurada](/_data/authors.yml/)** kendinizi ekleyin. Post yazdığınız zaman şu şekil kendinizi ekleyebilirsiniz:
+Kendini yazar olarak eklemeniz için ilk önce **[şurada](https://github.com/42resources/42resources.github.io/blob/master/_data/authors.yml)** kendinizi ekleyin. Post yazdığınız zaman şu şekil kendinizi ekleyebilirsiniz:
 
 ```text
 layout: post
@@ -54,7 +54,7 @@ author: [kaydettiğiniz nikinizi yazın, isim otomatik olarak gelir]
 
 # Resim ve PDF ekleme
 
-Resim veya PDF eklemek için önce onu **[assets](/assets/)** klasörüne yüklemeniz gerekiyor. Sonra yazdığınız postun içine şu şekilde eklemeler yapmanız gerekiyor:
+Resim veya PDF eklemek için önce onu **[assets](https://github.com/42resources/42resources.github.io/tree/master/assets)** klasörüne yüklemeniz gerekiyor. Sonra yazdığınız postun içine şu şekilde eklemeler yapmanız gerekiyor:
 
 ```text
 ![resim için yorum](/assets/screenshot.jpg)
