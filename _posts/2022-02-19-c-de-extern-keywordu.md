@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "C Dilinde extern Anahtar Kelimesi"
-category: [C]
-author: mkaramuk - littlecoder
+author: mkaramuk
+category: C
 ---
 
 Merhaba Dünya!
