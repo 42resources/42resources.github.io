@@ -2,8 +2,8 @@
 layout: post
 title:  "Html Etiketleri"
 author: talhaaksoy
-category: Html
-tag: Html
+category: HTML
+tag: HTML
 ---
 
 Açık kaynak topluluğunun web bölümündeki başlangıç seviyesinde olan arkadaşlar için html taglarını ve anlamlarını yazdım
