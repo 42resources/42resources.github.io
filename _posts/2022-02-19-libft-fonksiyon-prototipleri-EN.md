@@ -5,7 +5,7 @@ author: akarah
 categories: C libft
 tags: C libft
 
-googlewebfonts: Gloria+Hallelujah
+googlewebfonts: IBM+Plex+Mono
 ---
 
 <p align="center">
