@@ -1,7 +1,12 @@
+---
+title:  "Libft fonksiyon aciklamalari [EN]"
+author: akarah
+categories: [C libft]
+tag: [C libft]
+---
+
 <p align="center">
-  <a href="">
-    <img src="assets/libft/libft-icon.png" alt="libft">
-  </a>
+    <img src="../assets/libft/libft-icon.png" alt="libft">
 </p>
 
 # Table of Contents
@@ -39,7 +44,7 @@
     
     💡 `int isalpha(int c);`
 
-    checks for an alphabetic character; in the standard "C" locale, it is equivalent to (isupper(c) || is‐lower(c)).  In some locales, there may be additional characters for which  isalpha()  is true-letters which are neither uppercase nor lowercase.
+    checks for an alphabetic character; in the standard "C" locale, it is equivalent to (isupper(c) || is‐lower(c)). In some locales, there may be additional characters for which isalpha() is true-letters which are neither uppercase nor lowercase.
     
 - isdigit
     
@@ -71,6 +76,7 @@
     strlen - calculate the length of a string
 
     **SYNOPSIS**
+    
     ```C
     #include <string.h>
     size_t strlen(const char *s);
