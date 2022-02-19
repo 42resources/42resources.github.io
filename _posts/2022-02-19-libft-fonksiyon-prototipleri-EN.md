@@ -45,7 +45,7 @@ tags: C libft
 
 💡 `int isalpha(int c);`
 
-checks for an alphabetic character; in the standard "C" locale, it is equivalent to (isupper(c) || is‐lower(c)). In some locales, there may be additional characters for which isalpha() is true-letters which are neither uppercase nor lowercase.
+checks for an alphabetic character; in the standard "C" locale, it is equivalent to (isupper(c) \|\| is‐lower(c)). In some locales, there may be additional characters for which isalpha() is true-letters which are neither uppercase nor lowercase.
 
 - isdigit
 
@@ -57,7 +57,7 @@ checks for a digit (0 through 9).
 
 💡 `int isalnum(int c);`
 
-checks for an alphanumeric character; it is equivalent to (isalpha(c) || isdigit(c)).
+checks for an alphanumeric character; it is equivalent to (isalpha(c) \|\| isdigit(c)).
 
 - isascii
 
