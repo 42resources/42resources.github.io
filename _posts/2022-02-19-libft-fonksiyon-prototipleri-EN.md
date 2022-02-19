@@ -1,12 +1,13 @@
 ---
+layout: post
 title:  "Libft fonksiyon aciklamalari [EN]"
 author: akarah
-categories: [C libft]
-tag: [C libft]
+categories: C libft
+tags: C libft
 ---
 
 <p align="center">
-    <img src="../assets/libft/libft-icon.png" alt="libft">
+    <img src="/assets/libft/libft-icon.png" alt="libft">
 </p>
 
 # Table of Contents
