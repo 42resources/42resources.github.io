@@ -43,76 +43,77 @@ tags: C libft
 
 - isalpha
 
-💡 `int isalpha(int c);`
+    💡 `int isalpha(int c);`
 
-checks for an alphabetic character; in the standard "C" locale, it is equivalent to (isupper(c) \|\| is‐lower(c)). In some locales, there may be additional characters for which isalpha() is true-letters which are neither uppercase nor lowercase.
+    checks for an alphabetic character; in the standard "C" locale, it is equivalent to (isupper(c) \|\| is‐lower(c)). In some locales, there may be additional characters for which isalpha() is true-letters which are neither uppercase nor lowercase.
 
 - isdigit
 
-💡 `int isdigit(int c);`
+    💡 `int isdigit(int c);`
 
-checks for a digit (0 through 9).
+    checks for a digit (0 through 9).
 
 - isalnum
 
-💡 `int isalnum(int c);`
+    💡 `int isalnum(int c);`
 
-checks for an alphanumeric character; it is equivalent to (isalpha(c) \|\| isdigit(c)).
+    checks for an alphanumeric character; it is equivalent to (isalpha(c) \|\| isdigit(c)).
 
 - isascii
 
-💡 `int isascii(int c);`
+    💡 `int isascii(int c);`
 
-checks whether c is a 7-bit unsigned char value that fits into the ASCII character set.
+    checks whether c is a 7-bit unsigned char value that fits into the ASCII character set.
 
 - isprint
 
-💡 `int isprint(int c);`
+    💡 `int isprint(int c);`
 
-checks for any printable character including space.
+    checks for any printable character including space.
 
 - strlen
 
-💡 **NAME**
+    💡 **NAME**
 
-strlen - calculate the length of a string
+    strlen - calculate the length of a string
 
-**SYNOPSIS**
+    **SYNOPSIS**
 
-```c
-#include <string.h>
+    ```c
+    #include <string.h>
 
-size_t strlen(const char *s);
-```
+    size_t strlen(const char *s);
+    ```
 
-**DESCRIPTION**
+    **DESCRIPTION**
 
-The  strlen()  function  calculates  the length of the string pointed to by s, excluding the terminating null byte ('\0').
+    The  strlen()  function  calculates  the length of the string pointed to by s, excluding the terminating null byte ('\0').
 
-**RETURN VALUE**
+    **RETURN VALUE**
 
-The strlen() function returns the number of bytes in the string pointed to by s.
+    The strlen() function returns the number of bytes in the string pointed to by s.
 
 - memset
 
-💡 **NAME**
+    💡 **NAME**
 
-memset — fill memory with a constant byte
+    memset — fill memory with a constant byte
 
-**SYNOPSIS**
+    **SYNOPSIS**
 
-```C
-#include <string.h>
-void *memset(void *s, int c, size_t n);
-```
+    ```C
+    #include <string.h>
 
-**DESCRIPTION**
+    void *memset(void *s, int c, size_t n);
+    ```
 
-The memset() function fills the first n bytes of the memory area pointed to by s with the constant byte c.
+    **DESCRIPTION**
 
-**RETURN VALUE**
+    The memset() function fills the first n bytes of the memory area pointed to by s with the constant byte c.
 
-The memset() function returns a pointer to the memory area s.
+    **RETURN VALUE**
+
+    The memset() function returns a pointer to the memory area s.
 
 - bzero
 
@@ -120,7 +121,7 @@ The memset() function returns a pointer to the memory area s.
     bzero, explicit_bzero — zero a byte string
 
     **SYNOPSIS**
-    ```C
+    ```c
     #include <strings.h>
     void bzero(void *s, size_t n);
     ```
