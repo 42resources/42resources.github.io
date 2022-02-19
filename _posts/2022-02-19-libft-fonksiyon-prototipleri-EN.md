@@ -4,6 +4,8 @@ title:  "Libft fonksiyon aciklamalari [EN]"
 author: akarah
 categories: C libft
 tags: C libft
+
+googlewebfonts: Gloria+Hallelujah
 ---
 
 <p align="center">
