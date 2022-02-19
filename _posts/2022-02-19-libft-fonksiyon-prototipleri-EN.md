@@ -79,8 +79,9 @@ strlen - calculate the length of a string
 
 **SYNOPSIS**
 
-```C
+```c
 #include <string.h>
+
 size_t strlen(const char *s);
 ```
 
