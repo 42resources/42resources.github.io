@@ -5,7 +5,7 @@ author: akarah
 categories: C libft
 tags: C libft
 
-googlewebfonts: IBM+Plex+Sans
+googlewebfonts: Overpass
 ---
 
 <p align="center">
