@@ -8,7 +8,7 @@ tag: Python
 
 Herkese selamlar 👋🏽,
 
-umarım gününüz güzel geçiyordur. Bugün sizlere evolarımda gösterdiğim get-next-line için yaptığım python text dosyası oluşturucusunu göstermek istiyorum.
+Umarım gününüz güzel geçiyordur. Bugün sizlere evolarımda gösterdiğim get-next-line için yaptığım python text dosyası oluşturucusunu göstermek istiyorum.
 
 Kodu oldukça basit sadece 4 line (gerçekten). 
 
