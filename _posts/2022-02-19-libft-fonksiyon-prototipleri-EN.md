@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Libft fonksiyon aciklamalari [EN]"
+title:  "Libft fonksiyon açıklamaları [EN]"
 author: akarah
 categories: C libft
 tags: C libft
 
-googlewebfonts: IBM+Plex+Mono
+googlewebfonts: IBM+Plex+Sans
 ---
 
 <p align="center">
@@ -208,7 +208,7 @@ googlewebfonts: IBM+Plex+Mono
     strlcat — size-bounded string concatenation
 
     **SYNOPSIS**
-    ```C
+    ```c
     #include <string.h>
     
     size_t strlcat(char *dst, const char *src, size_t size);
