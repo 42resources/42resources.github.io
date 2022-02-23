@@ -94,51 +94,51 @@ Bu ekranı göreceksiniz. Sanırım bu giriş ekranı. :d
 
 Bu komutu çalıştırarak diskinizin bölümlerini ve şifreli bölümlerini görebilirsiniz:
 
-````lsblk````
+```lsblk```
 
 İndirmelere ve yapılandırmalara devam etmeden önce şunları bilmekte fayda var:
 
 - Root olmak:
 
-```` su -````
+``` su -```
 
 - Güncellenmesi gereken bir paket var mı yok mu arar ve varsa bulur yoksa bulmaz:
 
-````apt update````
+```apt update```
 
 - Güncellenmesi gereken bir paket varsa onu bu komut yapıyor ve güncelliyor:
 
-````apt upgrade````
+```apt upgrade```
 
 #### 🤸 Kullanıcı Komutları
 
 Bunların haricinde, sanal makinenizde ki bütün kullanıcıları görme komutu:
 
-````getent passwd````
+```getent passwd```
 
 Kullanıcı ekleme ve silme komutları **(root olmalısın)**:
 
-````adduser <user_name>```` - ````deluser <username>````
+```adduser <user_name>``` - ```deluser <username>```
 
 #### 🍇 Grup Komutları
 
 Sanal makinenizdeki grupları görme komutu:
 
-````getent group```` or ````getent group <group_name>```` -> **Bir grup altındaki kullanıcılar**
+```getent group``` or ```getent group <group_name>``` -> **Bir grup altındaki kullanıcılar**
 
 Grup ekleme ve silme komutları **(root olmalısın)**:
 
-````groupadd <group_name>```` - ````groupdel <group_name>````
+```groupadd <group_name>``` - ```groupdel <group_name>```
 
 #### 🤝 Kullanıcılar ve Grupların Birlikten Doğan Komutları
 
 Bir kullanıcının hangi grupta olduğunu görmek için bu komut:
 
-````groups <user_name>````
+```groups <user_name>```
 
 Bir gruba kullanıcı ekleme ve bir kullanıcıyı gruptan çıkarma komutu **(root olmalısın)**:
 
-````usermod -aG <group_name> <user_name>```` - ````gpasswd --delete <group_name> <user_name>````
+```usermod -aG <group_name> <user_name>``` - ```gpasswd --delete <group_name> <user_name>```
 
 ## 🛠️Paketleri İndirme ve Dosyaları Konfigüre Etme
 
@@ -146,11 +146,11 @@ Bir gruba kullanıcı ekleme ve bir kullanıcıyı gruptan çıkarma komutu **(r
 
 SSH'ı yükleme komutu:
 
-````apt install openssh-server````
+```apt install openssh-server```
 
 SSH etkinlik sorgu komutu ve SSH başlatma komutları:
 
-````systemctl status ssh```` - ````systemctl start ssh```` - ````systemctl enable ssh````
+```systemctl status ssh``` - ```systemctl start ssh``` - ```systemctl enable ssh```
 
 #### :dna: SSH Port Değiştirme
 
@@ -171,7 +171,7 @@ Bu ayarları değiştirmelisin:
 
 Tamam, bu ayarları yaptıktan sonra şu komutla yeniden başlatın:
 
-````service sshd restart````
+```service sshd restart```
 
 Ardından VirtualBox'ınıza gelin ve üst kısımdaki **'ayarlar'a**, ardından **'Ağ'a** basın,
 daha sonra altta bir **'Gelişmiş'** bölmesi olacak, oraya tıklayın ve **'Port Yönlendirme'ye** basın.
@@ -184,7 +184,7 @@ Zaten resim ekliyorum, neden açıklama gereği duydum bilmiyorum. Her neyse, ta
 
 Bunları yaptıktan sonra sanal makineyi yeniden başlatın **(root olmalısın)**:
 
-````reboot````
+```reboot```
 
 Bu ayarlardan sonra artık fiziksel makineden sanal makineye bağlanabilirsiniz.
 Nasıl mı? İşte bu kadar:
@@ -205,35 +205,35 @@ Ve sanal makinenizdeki kullanıcının şifresini girerek fiziksel makinenin ter
 
 UFW'yi İndirme:
 
-````apt install ufw````
+```apt install ufw```
 
 **UFW ile ilgili bazı komutlar**
 
 Bize gelen tüm istekleri reddedin:
 
-````ufw default deny incoming````
+```ufw default deny incoming```
 
 Tüm giden isteklere izin ver:
 
-````ufw default allow outgoing````
+```ufw default allow outgoing```
 
 Sistem başlangıcında UFW'yi etkinleştirin (Bunu yaptıktan sonra sanal makinenizi yeniden başlatın):
 
-````ufw enable````
+```ufw enable```
 
 UFW'nin durumunu kontrol edin:
 
-````ufw status```` - ````ufw status numbered```` -> kuralları numaralandır
+```ufw status``` - ```ufw status numbered``` -> kuralları numaralandır
 
 4242 numaralı bağlantı noktasına gelen isteklere izin verin veya bu bağlantı noktasını (4242) reddedin:
 
-````ufw allow 4242```` - ````ufw deny 4242````
+```ufw allow 4242``` - ```ufw deny 4242```
 
 <img src="https://raw.githubusercontent.com/Fartomy/42-Kickoff/master/Born2beroot/Episode2/9.png" align="center" height="300">
 
 Kural silmek için:
 
-````ufw delete allow 4242```` -> bu komut 'izin verilen' 4242 kuralını siler  ````ufw delete deny 4242```` -> bu da 'reddedilen' 4242 kuralını siler <br/>
+```ufw delete allow 4242```` -> bu komut 'izin verilen' 4242 kuralını siler  ````ufw delete deny 4242```` -> bu da 'reddedilen' 4242 kuralını siler <br/>
 ````ufw delete 1```` -> 1. kuralı siler
 
 🚩**Evet, UFW bu kadardı..** 🚩
