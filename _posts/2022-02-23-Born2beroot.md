@@ -94,21 +94,29 @@ Bu ekranı göreceksiniz. Sanırım bu giriş ekranı. :d
 
 Bu komutu çalıştırarak diskinizin bölümlerini ve şifreli bölümlerini görebilirsiniz:
 
-```lsblk```
+```
+lsblk
+```
 
 İndirmelere ve yapılandırmalara devam etmeden önce şunları bilmekte fayda var:
 
 - Root olmak:
 
-``` su -```
+```
+su -
+```
 
 - Güncellenmesi gereken bir paket var mı yok mu arar ve varsa bulur yoksa bulmaz:
 
-```apt update```
+```
+apt update
+```
 
 - Güncellenmesi gereken bir paket varsa onu bu komut yapıyor ve güncelliyor:
 
-```apt upgrade```
+```
+apt upgrade
+```
 
 #### 🤸 Kullanıcı Komutları
 
