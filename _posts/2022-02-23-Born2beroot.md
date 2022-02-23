@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "Kök olmak için doğmuş"
-category: [Linux]
+categories: [Linux Born2beroot]
 tag: [born2beroot]
 author: a_furkan
+=======
+
 ---
 <img src="https://art.pixilart.com/3e3fc9c4c42536a.gif" align="right" height="550">
 
