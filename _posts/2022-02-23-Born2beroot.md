@@ -3,7 +3,7 @@ layout: post
 title: "Kök olmak için doğmuş"
 category: [Linux]
 tag: [born2beroot]
-author:a_furkan
+author: a_furkan
 ---
 <img src="https://art.pixilart.com/3e3fc9c4c42536a.gif" align="right" height="550">
 
@@ -110,7 +110,7 @@ Bu komutu çalıştırarak diskinizin bölümlerini ve şifreli bölümlerini g�
 
 ````apt upgrade````
 
-#### Kullanıcı Komutları
+#### 🤸 Kullanıcı Komutları
 
 Bunların haricinde, sanal makinenizde ki bütün kullanıcıları görme komutu:
 
@@ -120,7 +120,7 @@ Kullanıcı ekleme ve silme komutları **(root olmalısın)**:
 
 ````adduser <user_name>```` - ````deluser <username>````
 
-#### Grup Komutları
+#### 🍇 Grup Komutları
 
 Sanal makinenizdeki grupları görme komutu:
 
@@ -130,7 +130,7 @@ Grup ekleme ve silme komutları **(root olmalısın)**:
 
 ````groupadd <group_name>```` - ````groupdel <group_name>````
 
-#### Kullanıcılar ve Grupların Birlikten Doğan Komutları
+#### 🤝 Kullanıcılar ve Grupların Birlikten Doğan Komutları
 
 Bir kullanıcının hangi grupta olduğunu görmek için bu komut:
 
@@ -199,7 +199,7 @@ Nasıl mı? İşte bu kadar:
 
 Ve sanal makinenizdeki kullanıcının şifresini girerek fiziksel makinenin terminalinden sanal makineye erişebilirsiniz.
 
-🚩 **Evet, SSH bu kadardı..** 🚩
+🚩**Evet, SSH bu kadardı..** 🚩
 
 ### 🛡️UFW İçin
 
@@ -236,7 +236,7 @@ Kural silmek için:
 ````ufw delete allow 4242```` -> bu komut 'izin verilen' 4242 kuralını siler  ````ufw delete deny 4242```` -> bu da 'reddedilen' 4242 kuralını siler <br/>
 ````ufw delete 1```` -> 1. kuralı siler
 
-🚩 **Evet, UFW bu kadardı..** 🚩
+🚩**Evet, UFW bu kadardı..** 🚩
 
 ### :godmode: Sudo için:
 
@@ -263,7 +263,7 @@ Buraya bazı katı kurallar ekleyin:
  ```bash
   Defaults     passwd_tries=3 -> 3 kere yanlış girme hakkı
   Defaults     badpass_message="Çok Yalnış Bir Şifre" -> yanlış girilirse hata mesajı
-  (yanlız o yalnış değil yanlış) -> (yalnız o yanlız değil 'yalnız') -> sürekli okuyunca dilim sürsştü (kendi çapımda gereksiz bir eğlenmeydi kusura bakmayın)
+  (yanlız o yalnış değil 'yanlış') -> (yalnız o yanlız değil 'yalnız') -> sürekli okuyunca dilim sürsştü (kendi çapımda gereksiz bir eğlenmeydi kusura bakmayın)
   Defaults     requiretty -> sudo komutu için terminal gerekliliği
   Defaults     log_file="/var/log/sudo/sudo.log" -> girilen her sudo komutunun tutulacağı kayıt yeri
   Defaults     log_input, log_output -> sudo komutunun girdi ve çıktıları
@@ -276,7 +276,7 @@ Sonuç olarak şu şekilde görünmeli:
 
 Bunları doğrulamak için 'root'tan çıkıp sudo komutu ile neler yapılabileceğini deneyebilirsiniz...
 
-🚩 **Evet, Sudo bu kadardı..** 🚩
+🚩**Evet, Sudo bu kadardı..** 🚩
 
 ### ⛓️ Şifre Politikası
 **İlk olarak, parola değiştirme sıklığını yapılandırın:**
@@ -346,7 +346,7 @@ Nasıl mı?
 
 ````passwd root```` ve ````passwd <user_name>````
 
-🏁 **Ve Sonunda 2. Bölüm Biter ** 🏁
+🏁**Ve Sonunda 2. Bölüm Biter ** 🏁
 
 ## 3️⃣ Bölüm 3 (Monitoring.sh ve Crontab Konfigürasyonları
 
@@ -386,7 +386,7 @@ Artık her şey bittiğine göre, disk imzanızı alma zamanı:
 
 Disk imzanız geldiğinde 'signature.txt' dosyası oluşturun içine bu imzayı yapıştırın ardından ve push'layın. Bu kadar. Buraya kadar geldiyseniz 🥳TEBRİKLER!!!🥳
 
-🏁 **Ve Sonunda 4. Bölüm Burada Biter..** 🏁
+🏁**Ve Sonunda 4. Bölüm Burada Biter..** 🏁
 
 ## 5️⃣ Ekstralar ve Kaynaklar
 
@@ -427,6 +427,10 @@ Ardından arkadaşınızın IPv4 adresini yazıp kendi bilgisayarınızdan port 
 7. [sudo config](https://www.tecmint.com/sudoers-configurations-for-setting-sudo-in-linux/)
 8. [List Users Commands](https://devconnected.com/how-to-list-users-and-groups-on-linux/#:~:text=In%20order%20to%20list%20users,navigate%20within%20the%20username%20list)
 
-🏁 **Ve Sonunda README.md Burada Biter..** 🏁
+🏁**Ve Sonunda README.md Burada Biter..**🏁
+
+### Son olarak Debian Kullanıcı ve root şifrelerinizi unutursanız
+
+🛰️ [Debian Şifre Reset'leme](https://www.youtube.com/watch?v=3Hrm3_CFKic)
 
 <img src="https://img-s1.onedio.com/id-588fe8b2433fbcd62e12507b/rev-0/w-600/h-321/f-gif/s-f7c0954a159e38b92a9d0b67684b570b9632c14b.gif" align="right" height="550">
