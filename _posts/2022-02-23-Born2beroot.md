@@ -5,9 +5,10 @@ categories: [Linux Born2beroot]
 tag: [born2beroot]
 author: a_furkan
 ---
+
 <img src="https://art.pixilart.com/3e3fc9c4c42536a.gif" align="right" height="550">
 
-# :robot: Born2beroot
+# 🤖 Born2beroot
 
 Bu proje bir Born2beroot yönergesidir. Bonus görevleri ve CentOS'u içermez.
 
@@ -27,7 +28,7 @@ Bu proje bir Born2beroot yönergesidir. Bonus görevleri ve CentOS'u içermez.
 
 5. [Ekstralar ve Kaynaklar](https://github.com/Fartomy/42-Kickoff/blob/master/Born2beroot/README.md#5%EF%B8%8F%E2%83%A3-extras-and-resources)
   
-## :one: Bölüm 1 (Debian'ı İndir)
+## 1️⃣ Bölüm 1 (Debian'ı İndir)
 
 Önce VirtualBox'ı indirin ve ardından Debian'nın .iso dosyasını. İşte bağlantılar:
 
@@ -85,7 +86,7 @@ Sonra ki kısım kurulum için bütün resimleri içerir:
 
 🏁 **Ve sonunda 1. Bölüm burada biter** 🏁
 
-## :two: Bölüm 2 (İndirmeler ve Ayarlamalar ve ve Konfigürasyonlar)
+## 2️⃣ Bölüm 2 (İndirmeler ve Ayarlamalar ve ve Konfigürasyonlar)
 
 Bu ekranı göreceksiniz. Sanırım bu giriş ekranı. :d
 
@@ -122,31 +123,33 @@ apt upgrade
 
 Bunların haricinde, sanal makinenizde ki bütün kullanıcıları görme komutu:
 
-```getent passwd```
+```
+getent passwd
+```
 
 Kullanıcı ekleme ve silme komutları **(root olmalısın)**:
 
-```adduser <user_name>``` - ```deluser <username>```
+`adduser <user_name>` - `deluser <username>`
 
 #### 🍇 Grup Komutları
 
 Sanal makinenizdeki grupları görme komutu:
 
-```getent group``` or ```getent group <group_name>``` -> **Bir grup altındaki kullanıcılar**
+`getent group` or `getent group <group_name>` -> **Bir grup altındaki kullanıcılar**
 
 Grup ekleme ve silme komutları **(root olmalısın)**:
 
-```groupadd <group_name>``` - ```groupdel <group_name>```
+`groupadd <group_name>` - `groupdel <group_name>`
 
 #### 🤝 Kullanıcılar ve Grupların Birlikten Doğan Komutları
 
 Bir kullanıcının hangi grupta olduğunu görmek için bu komut:
 
-```groups <user_name>```
+`groups <user_name>`
 
 Bir gruba kullanıcı ekleme ve bir kullanıcıyı gruptan çıkarma komutu **(root olmalısın)**:
 
-```usermod -aG <group_name> <user_name>``` - ```gpasswd --delete <group_name> <user_name>```
+`usermod -aG <group_name> <user_name>` - `gpasswd --delete <group_name> <user_name>`
 
 ## 🛠️Paketleri İndirme ve Dosyaları Konfigüre Etme
 
@@ -154,13 +157,15 @@ Bir gruba kullanıcı ekleme ve bir kullanıcıyı gruptan çıkarma komutu **(r
 
 SSH'ı yükleme komutu:
 
-```apt install openssh-server```
+```
+apt install openssh-server
+```
 
 SSH etkinlik sorgu komutu ve SSH başlatma komutları:
 
-```systemctl status ssh``` - ```systemctl start ssh``` - ```systemctl enable ssh```
+`systemctl status ssh` - `systemctl start ssh` - `systemctl enable ssh`
 
-#### :dna: SSH Port Değiştirme
+#### 🧬 SSH Port Değiştirme
 
 Şu dizine gitmelisin:
 
@@ -179,7 +184,9 @@ Bu ayarları değiştirmelisin:
 
 Tamam, bu ayarları yaptıktan sonra şu komutla yeniden başlatın:
 
-```service sshd restart```
+```bash
+service sshd restart
+```
 
 Ardından VirtualBox'ınıza gelin ve üst kısımdaki **'ayarlar'a**, ardından **'Ağ'a** basın,
 daha sonra altta bir **'Gelişmiş'** bölmesi olacak, oraya tıklayın ve **'Port Yönlendirme'ye** basın.
@@ -192,7 +199,9 @@ Zaten resim ekliyorum, neden açıklama gereği duydum bilmiyorum. Her neyse, ta
 
 Bunları yaptıktan sonra sanal makineyi yeniden başlatın **(root olmalısın)**:
 
-```reboot```
+```
+reboot
+```
 
 Bu ayarlardan sonra artık fiziksel makineden sanal makineye bağlanabilirsiniz.
 Nasıl mı? İşte bu kadar:
@@ -200,8 +209,9 @@ Nasıl mı? İşte bu kadar:
 - Terminalinizi fiziksel makineden açın ve aşağıdaki komutu yazın
 
 ```bash
-  ssh your_42user_name@localhost -p 4242
+ssh your_42user_name@localhost -p 4242
 ```
+
 <img src="https://github.com/Fartomy/42-Kickoff/blob/master/Born2beroot/Episode2/7.png?raw=true" align="center" height="300">
 <img src="https://github.com/Fartomy/42-Kickoff/blob/master/Born2beroot/Episode2/8.png?raw=true" align="center" height="300">
 
@@ -213,36 +223,44 @@ Ve sanal makinenizdeki kullanıcının şifresini girerek fiziksel makinenin ter
 
 UFW'yi İndirme:
 
-```apt install ufw```
+```
+apt install ufw
+```
 
 **UFW ile ilgili bazı komutlar**
 
 Bize gelen tüm istekleri reddedin:
 
-```ufw default deny incoming```
+```
+ufw default deny incoming
+```
 
 Tüm giden isteklere izin ver:
 
-```ufw default allow outgoing```
+```
+ufw default allow outgoing
+```
 
 Sistem başlangıcında UFW'yi etkinleştirin (Bunu yaptıktan sonra sanal makinenizi yeniden başlatın):
 
-```ufw enable```
+```
+ufw enable
+```
 
 UFW'nin durumunu kontrol edin:
 
-```ufw status``` - ```ufw status numbered``` -> kuralları numaralandır
+`ufw status` - `ufw status numbered` -> kuralları numaralandır
 
 4242 numaralı bağlantı noktasına gelen isteklere izin verin veya bu bağlantı noktasını (4242) reddedin:
 
-```ufw allow 4242``` - ```ufw deny 4242```
+`ufw allow 4242` - `ufw deny 4242`
 
 <img src="https://raw.githubusercontent.com/Fartomy/42-Kickoff/master/Born2beroot/Episode2/9.png" align="center" height="300">
 
 Kural silmek için:
 
-```ufw delete allow 4242```` -> bu komut 'izin verilen' 4242 kuralını siler  ````ufw delete deny 4242```` -> bu da 'reddedilen' 4242 kuralını siler <br/>
-````ufw delete 1```` -> 1. kuralı siler
+`ufw delete allow 4242` -> bu komut 'izin verilen' 4242 kuralını siler  `ufw delete deny 4242` -> bu da 'reddedilen' 4242 kuralını siler <br/>
+`ufw delete 1` -> 1. kuralı siler
 
 🚩**Evet, UFW bu kadardı..** 🚩
 
@@ -252,15 +270,19 @@ Sudo'yu çok çok katı kurallara göre yapılandırma (soğuk espri :/)
 
 Sudo'yu indirin:
 
-````apt install sudo````
+````
+apt install sudo
+````
 
 Konfigürasyon ayarlarına geçmeden önce kullanıcınızı 'sudo' grubu altına ekleyin:
 
-````usermod -aG sudo <user_name>````
+```
+usermod -aG sudo <user_name>
+```
 
 Tamam, çok şey yaptık, şimdi yapılandırma ayarlarına geçelim: :d
 
-````visudo```` -> Bu komutla konfigürasyon dosyasına girelim
+`visudo` -> Bu komutla konfigürasyon dosyasına girelim
 
 Böyle bir ekran gelmeli:
 
@@ -268,7 +290,7 @@ Böyle bir ekran gelmeli:
 
 Buraya bazı katı kurallar ekleyin:
  
- ```bash
+```bash
   Defaults     passwd_tries=3 -> 3 kere yanlış girme hakkı
   Defaults     badpass_message="Çok Yalnış Bir Şifre" -> yanlış girilirse hata mesajı
   (yanlız o yalnış değil 'yanlış') -> (yalnız o yanlız değil 'yalnız') -> sürekli okuyunca dilim sürsştü (kendi çapımda gereksiz bir eğlenmeydi kusura bakmayın)
@@ -292,6 +314,7 @@ Bunları doğrulamak için 'root'tan çıkıp sudo komutu ile neler yapılabilec
 ```bash
   nano /etc/login.defs
 ```
+
 Şu ayarı bulmalısın 'pass aging control':
 
 <img src="https://raw.githubusercontent.com/Fartomy/42-Kickoff/master/Born2beroot/Episode2/12.png" align="center" height="300">
@@ -303,15 +326,16 @@ Sonra bunu yap:
    PASS_MIN_DAYS   2
    PASS_WARN_AGE   7
 ```
+
 **⚠️Evet, hepsi bu, ancak bu ayar root ve sizden (usr) sonraki kullanıcılar için geçerlidir. Kullanıcınızı ve kökünüzü değiştirmek için bunu yapın️**
 
 Önce sana bu olayı kanıtlayayım:
 
-````chage -l root```` ve ````chage -l <user_name>```` -> Bu yeterli bir kanıttı :d
+`chage -l root` ve `chage -l <user_name>` -> Bu yeterli bir kanıttı :d
 
 Değiştirmek için:
 
-````chage root```` ve ````chage <user_name>````
+`chage root` ve `chage <user_name>`
 
 <img src="https://raw.githubusercontent.com/Fartomy/42-Kickoff/master/Born2beroot/Episode2/13.png" align="center" height="300">
 
@@ -321,13 +345,16 @@ Ne yapacağını biliyorsun..
 
 Bunu indirelim:
 
-````apt install libpam-pwquality````
+````bash
+apt install libpam-pwquality
+````
 
 Bu yolu takip et:
 
 ```bash
    nano/etc/security/pwquality.conf
 ```
+
 Böyle bir şeyle karşılaşacaksınız:
 
 <img src="https://raw.githubusercontent.com/Fartomy/42-Kickoff/master/Born2beroot/Episode2/14.png" align="center" height="300">
@@ -352,7 +379,7 @@ Açıklamalarını yazmayacağım, zaten yazılmış…
 
 Nasıl mı?
 
-````passwd root```` ve ````passwd <user_name>````
+`passwd root` ve `passwd <user_name>`
 
 🏁**Ve Sonunda 2. Bölüm Biter ** 🏁
 
@@ -368,7 +395,9 @@ Nasıl mı?
 
 Bu komutu yazın:
 
-````crontab -e````
+```
+crontab -e
+```
 
 Ve en alta bunu yaz:
 
@@ -382,7 +411,7 @@ Açıklama yapmayacağım, dosya da yine açıklaması var..
 
 🏁 **Ve Sonunda 3. Bölüm Tüm Zorluklarla Biter ..** 🏁
 
-## :four: Bölüm 4 (Teslim ve Ön Değerlendirme)
+## 4️⃣ Bölüm 4 (Teslim ve Ön Değerlendirme)
 
 Artık her şey bittiğine göre, disk imzanızı alma zamanı:
 
@@ -390,7 +419,7 @@ Artık her şey bittiğine göre, disk imzanızı alma zamanı:
 
 Şunu yazmalısın:
 
-````shasum <your_virtual_machine>.vdi```` -> Çıkması biraz vakit alabilir.
+`shasum <your_virtual_machine>.vdi` -> Çıkması biraz vakit alabilir.
 
 Disk imzanız geldiğinde 'signature.txt' dosyası oluşturun içine bu imzayı yapıştırın ardından ve push'layın. Bu kadar. Buraya kadar geldiyseniz 🥳TEBRİKLER!!!🥳
 
@@ -406,25 +435,29 @@ Disk imzanız geldiğinde 'signature.txt' dosyası oluşturun içine bu imzayı 
 
 Malzemeler:
 
-- ````ifconfig```` -> yok ise ````apt install net-tools```` -> IPv4 adresi
+- `ifconfig` -> yok ise `apt install net-tools` -> IPv4 adresi
 
 ve
 
 - Port
 
-````netstat -anvp tcp | awk 'NR<3 || /LISTEN/'````
+```
+netstat -anvp tcp | awk 'NR<3 || /LISTEN/'
+```
 
 **NetChat'i Nasıl Kullanılır?**
 
 Her şeyden önce, arkadaşınızın bilgisayarının açık olan portunu terminale yazın::
 
-````nc -l <port>```` -> ve ENTER, ve bekle..
+`nc -l <port>` -> ve ENTER, ve bekle..
 
 Ardından arkadaşınızın IPv4 adresini yazıp kendi bilgisayarınızdan port numarasını açın ve mesajlaşmaya başlayın :d
 
-````nc <arkadaşının_IPv4_adresi> <port>````
+```
+nc <arkadaşının_IPv4_adresi> <port>
+```
 
-### :brain: Kaynaklar
+### 🧠 Kaynaklar
 
 1. [Aptitude vs apt](https://dijitalders.net/icerik/22/2369/apt_get_ve_aptitude.html)
 2. [Sudo](https://medium.com/@gokhansengun/sudo-nas%C4%B1l-kullan%C4%B1l%C4%B1r-ve-incelikleri-nelerdir-52db87d74ba)
