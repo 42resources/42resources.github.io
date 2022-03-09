@@ -1,4 +1,4 @@
-# 42 Istanbul notları
+# 42 Ana Eğitim Notları
 
 ## Yeni post ekleme
 
