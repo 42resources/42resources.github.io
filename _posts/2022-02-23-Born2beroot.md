@@ -149,7 +149,7 @@ Bir kullanıcının hangi grupta olduğunu görmek için bu komut:
 
 Bir gruba kullanıcı ekleme ve bir kullanıcıyı gruptan çıkarma komutu **(root olmalısın)**:
 
-`usermod -aG <group_name> <user_name>` - `gpasswd --delete <group_name> <user_name>`
+`usermod -aG <group_name> <user_name>` - `gpasswd --delete <user_name> <group_name>`
 
 ## 🛠️Paketleri İndirme ve Dosyaları Konfigüre Etme
 
