@@ -295,7 +295,7 @@ Buraya bazı katı kurallar ekleyin:
   Defaults     badpass_message="Çok Yalnış Bir Şifre" -> yanlış girilirse hata mesajı
   (yanlız o yalnış değil 'yanlış') -> (yalnız o yanlız değil 'yalnız') -> sürekli okuyunca dilim sürsştü (kendi çapımda gereksiz bir eğlenmeydi kusura bakmayın)
   Defaults     requiretty -> sudo komutu için terminal gerekliliği
-  Defaults     log_file="/var/log/sudo/sudo.log" -> girilen her sudo komutunun tutulacağı kayıt yeri
+  Defaults     logfile="/var/log/sudo/sudo.log" -> girilen her sudo komutunun tutulacağı kayıt yeri
   Defaults     log_input, log_output -> sudo komutunun girdi ve çıktıları
   Defaults     iolog_dir="/var/log/sudo/" -> girdi ve çıktıların yolu
 ```
