@@ -8,7 +8,7 @@ tag: c, philosophers, thread, mutex
 
 Herkese merhaba, filozoflar problemi bilgi işlem sistemlerinde **threadler** arasındaki senkronizasyon ve veri paylaşımının nasıl yapılacağını ele alan bir sorundur. Bu problem 5 filozofun bir yemek masasında oturdukları ve yemek yeme, uyuma, düşünme gibi temel konulara ihtiyaç duydukları bir senaryodan oluşur.
 
-![philo](https://github.com/b-tekinli/Philosophers/blob/main/philosophers.png)
+![philo](../assets/philosophers/philosophers.png)
 
 Buradaki asıl sorun şu ki her filozof sağında ve solunda birer çatal bulundurur ve yemek yemeye başlamadan önce sağındaki ve solundaki 2 çatalı da eline alması gereklidir. Fakat filozoflar aynı anda sağ ve solundaki çatalı almaya çalışırlarsa ortaya bir kavga etme durumu çıkabilir :) Teknik olarak açıklamak gerekirse aynı anda birden fazla thread tarafından aynı veri üzerinde işlem yapılmaya çalışılırsa sistem çökebilir.
 
